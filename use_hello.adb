@@ -10,8 +10,8 @@ begin
     
     for ii in 1..10 loop	--ii es un index, declaracion implicita
 
-	     hello_world;		--Usamos un programa de OTRO MODULO! :D
-         T_IO.New_Line;     --Retorno de carro
+	 hello_world;		--Usamos un programa de OTRO MODULO! :D
+         T_IO.New_Line;     	--Retorno de carro
 
     end loop;			--El fin de la estructura de control se identifica
 
