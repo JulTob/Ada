@@ -18,14 +18,32 @@ procedure Hello_Explicit_Conversion is
 declare
     C: Colour:= Blue;
     L: Light;
+    
     Buffer: Buffer_Type;
+    
+    I : Integer;
+    F : Float;
+    
 begin --Hello_Explicit_Conversion
 L:= Light(C);    --legal
 C:= Colour(L);   --legal
 --C:=L            --ilegal
+
+I := 1;      --legal
+--I := 1.0;  --ilegal
+--F := 1;    --ilegal
+F := 1.0;    --legal
+--F := I;    --ilegal
+--I := F;    --ilegal
+F := Float(I);    −− Explicit conversion
+I := Integer (F); −− Explicit conversion
+
+
 Buffer.Data(1..3):='xyz';
 Buffer.Position(Starting):=1;
 Buffer.Position(Finishing):=3;
 Buffer:= (Data=> ('X','Y','Z',others=>' '),
           Position=>(Starting=>1,Finishing=>3);
+          
+          
 end Hello_Explicit_Conversion;
