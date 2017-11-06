@@ -17,5 +17,5 @@ begin
     end case; 
   end loop;
   Put(”Total number of vowels = ”); Put(Vowel Count); New Line;
-  Put(”Total number of Ys = ”); Put(Y Count); New Line; 
+  Put(”Total number of Ys = ”); Put(Y Count); New Line(2); 
 end Vowels;
