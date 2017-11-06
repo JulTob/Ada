@@ -23,5 +23,6 @@ else
       return;
     end if;
   end loop;
-Put Line(” is prime.”); end if;
+  Put Line(” is prime.”); 
+end if;
 end Prime;
