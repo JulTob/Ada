@@ -17,7 +17,7 @@ if Number < 2 then
 else
   Put(”The value ”); 
   Put(Number, 0); 
-  for I in 2 .. (Number−1)loop
+  for I in 2 .. (Number/2+1)loop
     if Number rem I = 0 then
       Put Line(” is not prime.”); 
       return;
