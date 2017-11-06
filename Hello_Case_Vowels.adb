@@ -1,5 +1,5 @@
-with Ada.Text IO; use Ada.Text IO;
-with Ada.Integer Text IO; use Ada.Integer Text IO;
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 procedure Vowels is
   Letter : Character;
