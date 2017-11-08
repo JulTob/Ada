@@ -3,7 +3,7 @@ with Ada.Integer Text IO; use Ada.Integer Text IO;
 
 procedure Prime is
 
-Number : Integer;
+Number : Positive;
 
 begin
 
