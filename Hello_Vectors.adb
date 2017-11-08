@@ -12,6 +12,10 @@ begin
     Work_Hours(Day):=8;
   end loop;
 
+--Hollidays!
+  for Day in Day_Type loop
+    Work_Hours(Day):=2;
+  end loop;
 
 
 end Hello_Vectors;
