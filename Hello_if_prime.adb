@@ -5,7 +5,18 @@ procedure Prime is
 
 Number : Positive;
 
-begin
+  --This function returns true if N is prime, false otherwise
+  function Is_Prime((N: Positive) return Boolean is
+  begin --Is_Prime
+    for ii in 2..(N-1) loop
+      if (N mod ii)=0 then
+        return False;
+      end if;
+    end loop;
+    return True;
+  end Is-Prime;
+
+begin --Prime
 
 Put(”Enter an integer : ”); 
 Get(Number);
@@ -17,12 +28,10 @@ if Number < 2 then
 else
   Put(”The value ”); 
   Put(Number, 0); 
-  for I in 2 .. (Number/2+1)loop
-    if Number rem I = 0 then
-      Put Line(” is not prime.”); 
-      return;
-    end if;
-  end loop;
-  Put Line(” is prime.”); 
+  if Is_Prime(Number) then
+    Put_Line(" is prime.");
+  else
+    Put_Line(" is NOT prime.");
+  end if;
 end if;
 end Prime;
