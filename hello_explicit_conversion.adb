@@ -15,7 +15,7 @@ procedure Hello_Explicit_Conversion is
     type Z_Coordinate_Type is range 0..(1024-1);  --No variables here
     
     --Or improve portability specifying size
-    type Block Counter Type is range 0 .. 1 000 000 000;
+    type Block Counter Type is range 0 .. 1_000_000_000;
     
     --Or make a cyclic type with modular types!!!!
     type Offset_Type is mod 2**8;   --0 to 2**8-1 and back. 8 bits
@@ -50,6 +50,8 @@ procedure Hello_Explicit_Conversion is
     subtype Natural is Integer range 0 .. Integer ’ Last ; 
     subtype Positive is Integer range 1 .. Integer ’ Last ;
 
+    --And Subtypes can be defined ON THE RUN!
+    
 
     --All this are discrete Types and share this properties: THE ATRIBUTES
     
