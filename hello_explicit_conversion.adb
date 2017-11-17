@@ -72,6 +72,7 @@ declare
     
     I : Integer;
     F : Float;
+    B : Boolean;
     
     Base: X_Coordinate_Type;
     High: Y_Coordinate_Type;
@@ -140,6 +141,9 @@ C:= Color_Type'Val(3);
 Day:=Day_Type'Val(I);
 I:=Integer'Val(1);      --Again, wtf is this doing
 
+--Size (The Size in Data!
+I:=Boolean'Size;
+I:=B'Size
 
 --Control Flow: Use your types for better control of the program!
 
