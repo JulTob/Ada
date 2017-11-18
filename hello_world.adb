@@ -2,13 +2,9 @@ with Ada.Text_IO;		--Uso de la libreria de Texto In/Out
 
 procedure Hello_World is	--Declaracion del programa
 
-	package T_IO renames Ada.Text_IO;
-			--Sustituye con T_IO para llamar a la libreria Text_IO
-
-
 begin 				--Comienza la definicion del programa
 
-	T_IO.Put_Line("Hola mundo");
+	Ada.Text_IO.Put_Line("Hola mundo");
 			--Las dobles comillas ("...") declaran un array de chars
 			--Put_Line es una función que imprime por salida estandar
 
