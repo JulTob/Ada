@@ -11,9 +11,11 @@ begin 				--Comienza la definicion del programa
 	T_IO.Put_Line("Hola mundo");
 			--Las dobles comillas ("...") declaran un array de chars
 			--Put_Line es una función que imprime por salida estandar
-	IO.New_Line;
-   	IO.Put("I am an Ada programm with package rename.");
-	IO.New_Line;
+			
+	IO.New_Line;	--Goes a line down
+	
+   	IO.Put("I am an Ada programm with package rename."); 	--Writtes but doesnt start a new line
+	IO.New_Line;	--Goes a Line Down
 	
 end Hello_World;
 
