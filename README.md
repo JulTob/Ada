@@ -6,3 +6,5 @@ The pourpouse is to complement and go through the concepts studied in class.
 
 The Code is BeerFree: If you use it, I'd apreciate a beer.
 Also allowed to share and reuse for educational pourposes.
+
+Check it out in my Blog: https://sites.google.com/view/learn-ada/ada-home
