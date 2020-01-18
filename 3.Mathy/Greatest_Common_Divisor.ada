@@ -1,3 +1,5 @@
+with  Ada.Integer_IO;
+
 procedure Greatest_Common_Divisor is
 
    function Greatest_Common_Divisor(X : Natural; Y : Natural) return Natural is
@@ -20,6 +22,6 @@ procedure Greatest_Common_Divisor is
    
 begin
   
-  put( Greatest_Common_Divisor(12,6);
+  Ada.Integer_IO.put( Greatest_Common_Divisor(12,6);
 
 end Greatest_Common_Divisor;
