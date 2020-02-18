@@ -6,3 +6,7 @@ begin
   Ada.Text_IO.Put("Such a nice day")
   Ada.Text_IO.New_Line;
 end HelloAda;
+
+
+-- Compilation:
+--- $gnatmake -g HelloAda.adb
