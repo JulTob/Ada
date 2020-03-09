@@ -23,6 +23,7 @@ begin
   New_Line;
   Put("From " &
     Integer'Image(
+    -- Note that we can call Naturals onto the Integer Atribute, as it is a subtype
       Natural'First
     ) & " to " &
     Integer'Image(
