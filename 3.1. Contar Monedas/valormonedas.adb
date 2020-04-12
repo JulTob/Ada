@@ -7,20 +7,20 @@ procedure ValorMonedas is
 
 	package T_IO renames Ada.Text_IO;
  	
-
 	Valores: array (1..6) of Integer;
+
 	Contable: Integer ;
 	Cantidad: Integer;
 	Aux: Integer;
 
-begin
+   begin
 
 	Contable:=0;
 	Cantidad:=0;
 	
 	Valores:=(1,2,5,10,20,50);
 	
-	for C in Integer range 1..6 loop
+	for C in Integer range Valores'Range loop
 	
 		T_IO.Put("Monedas de" & Integer'Image(Valores(C)) & "centimos ");
 
@@ -29,7 +29,7 @@ begin
 		T_IO.New_Line(1);
 
 		Contable:= Contable + (Cantidad * Valores(C));
-	end loop;
+	   end loop;
 	--Parte "a mano" del loop. Se indexa a misma altura por relación
 		T_IO.Put("Monedas de 1 Euro ");
 
@@ -54,4 +54,4 @@ begin
 			 & Integer'Image(Contable) & " centimos.");
 	
 
-end ValorMonedas;
+   end ValorMonedas;
