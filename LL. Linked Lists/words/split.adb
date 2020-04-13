@@ -16,11 +16,11 @@ package body Split is
 		begin
 			while not Finish_Line loop 
 				Position:= UString.Index(Frase," ");
-				if Position = 0 then 						
+				if Position = 0 then -- No space was found						
 					Finish_Line:= True;		
-				elsif Position=1 then 
+				elsif Position=1 then -- Stars with space. Skip that.
 					Frase:= UString.Tail(Frase,UString.Length(Frase)-Position);					
-				else 
+				else -- Cut first word and send to list, repeat with the rest
 					Word:= UString.Head(Frase,Position-1);
 					word_lists.Add_Word(List,Word);
 					Frase:= 
