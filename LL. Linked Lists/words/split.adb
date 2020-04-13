@@ -12,7 +12,7 @@ package body Split is
 		List:   in out word_lists.Word_List_Type) is 
 			Finish_Line: Boolean :=False;
 			Word: UString.Unbounded_String;
-			Position: Integer;
+			Position: Natural;
 		begin
 			while not Finish_Line loop 
 				Position:= UString.Index(Frase," ");
