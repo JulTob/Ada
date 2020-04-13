@@ -1,14 +1,11 @@
 with Ada.Exceptions;
 with Ada.IO_Exceptions;
-with Ada.Command_Line;
 with Ada.Text_IO;
 with Word_Lists;
 
 procedure Control_Words is
 
 	package T_IO renames Ada.Text_IO;
-
-	package ACL renames Ada.Command_Line;
 
 	package Int_IO is new Ada.Text_IO.Integer_IO(Integer);
 	
