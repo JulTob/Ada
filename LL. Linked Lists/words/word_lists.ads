@@ -16,22 +16,22 @@ package Word_Lists is
    procedure 
    Add_Word (
    	List : in out Word_List_Type; 
-	Word  : in     ASU.Unbounded_String);
+	Word : in     ASU.Unbounded_String);
    
    procedure 
    Delete_Word (
    	List: in out Word_List_Type; 
-	Word : in     ASU.Unbounded_String);
+	Word: in     ASU.Unbounded_String);
    
    procedure 
    Search_Word (
-   	List: in  Word_List_Type;
+   	List:  in  Word_List_Type;
 	Word:  in  ASU.Unbounded_String;
 	Count: out Natural);
    
    procedure 
    Max_Word (
-   	List: in  Word_List_Type;
+   	List:  in  Word_List_Type;
 	Word:  out ASU.Unbounded_String;
 	Count: out Natural);  
    
