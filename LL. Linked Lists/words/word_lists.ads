@@ -4,9 +4,7 @@ package Word_Lists is
    package ASU renames Ada.Strings.Unbounded;
    
    type Cell;
-   
    type Word_List_Type is access Cell;
-   
    type Cell is record
       Word: ASU.Unbounded_String;
       Count: Natural := 0;
