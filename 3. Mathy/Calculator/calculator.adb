@@ -27,7 +27,9 @@ procedure Calculator is
       Put(Result, Width => 1);
       New_Line;
       exception
-         when Constraint_Error | Data_Error =>
-            Put_Line(" Input Error. Try again.");
+         when Constraint_Error => 
+            Put("Value out of range.");
+         when Data_Error =>
+            Put_Line(" Input Error. Integer Number expected.");
             Skip_Line;
       end Calculator;
