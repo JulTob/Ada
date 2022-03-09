@@ -3,6 +3,7 @@ use  Ada.Text_IO, Ada.Integer_Text_IO;
 procedure Calculator is
     First, Second : Integer;
     Operator      : Character;
+    result        : Integer;
     begin
       Put ("Enter an expression: ");
       Get (First);
@@ -10,19 +11,20 @@ procedure Calculator is
       Get (Second);
       case Operator is
         when '+' =>
-            Put (First + Second, Width => 1);
+            Result := First + Second;
         when '-' =>
-            Put (First - Second, Width => 1);
+            Result := First - Second;
         when '*' =>
-            Put (First * Second, Width => 1);
+            Result := First * Second;
         when '/' =>
             if second = 0 then raise Constraint_Error; end if;
-            Put (First / Second, Width => 1);
+            Result := First / Second;
         when others =>
             Put ("Invalid operator '");
             Put (Operator);
             Put ("'");
         end case;
+      Put(Result, Width => 1);
       New_Line;
       exception
          when Constraint_Error | Data_Error =>
