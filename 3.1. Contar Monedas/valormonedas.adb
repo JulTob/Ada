@@ -2,6 +2,7 @@
 with Ada.Text_IO;
 
 procedure ValorMonedas is
+-- Este programa cuenta monedas y devuelve el resultado en valor monetario.
 
 	package Integer_IO is new Ada.Text_IO.Integer_IO(Integer);
 
