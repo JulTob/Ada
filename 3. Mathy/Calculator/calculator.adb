@@ -16,7 +16,7 @@ procedure Calculator is
         when '*' =>
             Put (First * Second, Width => 1);
         when '/' =>
-            if second = 0 then raise Constraint_Error	; end if;
+            if second = 0 then raise Constraint_Error; end if;
             Put (First / Second, Width => 1);
         when others =>
             Put ("Invalid operator '");
@@ -24,4 +24,8 @@ procedure Calculator is
             Put ("'");
         end case;
       New_Line;
+      exception
+         when Constraint_Error | Data_Error =>
+            Put_Line(" Input Error. Try again.");
+            Skip_Line;
       end Calculator;
