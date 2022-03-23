@@ -10,7 +10,7 @@ procedure ValorMonedas is
 	Contable: Integer ;
 	Cantidad: Integer;
 	Aux: Integer;
-begin
+   begin
 	Contable:=0;
 	Cantidad:=0;
 	Valores:=(1,2,5,10,20,50);
