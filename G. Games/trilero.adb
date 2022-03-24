@@ -6,7 +6,7 @@ WITH Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 -- El juego del trilero se basa en encontrar bajo que copa está el guisante
 
 
-PROCEDURE WherePea IS
+PROCEDURE Trilero IS
 
   SUBTYPE Cups IS Integer RANGE 1..3;
   Games, Won : Integer := 0;
@@ -14,12 +14,12 @@ PROCEDURE WherePea IS
   Choice : Natural;
 
   PROCEDURE Instructions
-	  IS
-	  BEGIN
-   	  Put_line( "This game is called Pick the Cup, or Thimblerig. The goal of the game" );
-   	  Put_line( "is to try to guess under which cup the pea is hidden." ); 
+    IS
+    BEGIN
+      Put_line( "This game is called Pick the Cup, or Thimblerig. The goal of the game" );
+      Put_line( "is to try to guess under which cup the pea is hidden." ); 
       new_line(2);
-	    end;
+      end;
 
   FUNCTION Whereis
 	  RETURN natural IS
@@ -60,6 +60,7 @@ PROCEDURE WherePea IS
    
    G : Generator;
    C : Character;
+   
 	 BEGIN
 	   reset (G);  
      -- initiaise random number generator
