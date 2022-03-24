@@ -61,41 +61,41 @@ PROCEDURE Trilero IS
    G : Generator;
    C : Character;
    
-	 BEGIN
-	   reset (G);  
-     -- initiaise random number generator
-		 instructions;		
-     -- Give user some instructions
-     loop
-			  choice := whereis;  
+   BEGIN
+      reset (G);  
+      -- initiaise random number generator
+      instructions;		
+      -- Give user some instructions
+      loop
+        choice := whereis;  
         -- Ask user where is the pea
-			  exit when choice = 0;  
+        exit when choice = 0;  
         -- exit game loop if user wants to quit
-			  games := games + 1;
-			  pea := random(G);		
+        games := games + 1;
+        pea := random(G);		
         -- pea = 1, 2 or 3
-		    if pea = choice then
-		        put_line( "Congratulations, you won!" );
-	          New_Line;
-	          won := won + 1;
-				  else
-			      Put_Line ( "Sorry, you lost.");
-			      New_Line;
-			    	end if;
-
-		    showpea(pea);		
+        if pea = choice then
+          put_line( "Congratulations, you won!" );
+          New_Line;
+          won := won + 1;
+          else
+            Put_Line ( "Sorry, you lost.");
+            New_Line;
+            end if;
+        showpea(pea);		
         -- Show pea to user
-		    New_Line(2);
-		    Put("Pause "); Get_immediate(C);	
+        New_Line(2);
+        Put("Pause "); 
+        Get_immediate(C);	
         -- Wait for user to hit a key
-		    new_line(3);		
+        new_line(3);		
         -- Clear screen
-			  End Loop;
-
-	    Put( "You won " ); 
+        End Loop;
+      Put( "You won " ); 
       put( won, 1 ); 
       put (" of "); 
       put( games, 1 ); 
       put_line( " games" );
-
-		end;
+      
+      
+ end;
