@@ -6,7 +6,7 @@ with Ada.Integer_Text_IO;
 package Trafico is
 
 	--Renames--
-	package T_IO renames Ada.Text_IO;
+        package T_IO renames Ada.Text_IO;
     	package I_IO renames Ada.Integer_Text_IO;
 
 
