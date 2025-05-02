@@ -1,15 +1,20 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fafaff;
-  color: #333;
-  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  color: #336699;
-  border-bottom: 2px solid #cccccc;
+h1, h2 {
+  border-left: 4px solid #0b6e4f; /* Safety-green color */
+  padding-left: 10px;
 }
 
-p {
-  font-size: 16px;
+.sidebar {
+  background-color: #f2f8f4; /* calm, safe background */
+}
+
+.sidebar ul li a {
+  color: #0b6e4f; /* deep, stable green */
+}
+
+.sidebar ul li a:hover {
+  background-color: #e0f0ea;
 }
