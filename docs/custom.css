@@ -20,7 +20,3 @@ h1, h2 {
   background-color: Electric;
   }
 
-@media screen and (max-width: 25%) {
-  .sidebar {
-    width: 200px; /* smaller screens */
-  }
