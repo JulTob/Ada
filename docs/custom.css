@@ -3,7 +3,7 @@ body {
   }
 
 h1, h2 {
-  border-left: 4px solid Gold; /* Safety-green color */
+  border-left: 4px solid Line; 
   padding-left: 10px;
   color: Electric;
   }
@@ -18,4 +18,9 @@ h1, h2 {
 
 .sidebar ul li a:hover {
   background-color: Gold;
+  }
+
+@media screen and (max-width: 25%) {
+  .sidebar {
+    width: 200px; /* smaller screens */
   }
