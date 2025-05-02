@@ -9,7 +9,7 @@ h1, h2 {
   }
 
 a {
-  color: Electric;
+  color: Electric, Gold;
   }
 
 .sidebar {
@@ -17,7 +17,7 @@ a {
   }
 
 .sidebar ul li a {
-  color: SteelBlue; /* deep, stable green */
+  color: SteelBlue, DarkTurquoise; 
   }
 
 .sidebar ul li a:hover {
