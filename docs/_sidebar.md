@@ -1,3 +1,2 @@
 - [Home](README.md)
-- [Page 1](page1.html)
-- [Page 2](page2.html)
+- [Introduction](Introduction.md)
