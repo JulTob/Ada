@@ -1,9 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: Electric
 }
 
 h1, h2 {
-  border-left: 4px solid #0b6e4f; /* Safety-green color */
+  border-left: 4px solid Electric; /* Safety-green color */
   padding-left: 10px;
 }
 
