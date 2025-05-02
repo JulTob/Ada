@@ -8,6 +8,10 @@ h1, h2 {
   color: Electric;
   }
 
+a {
+  color: Electric;
+  }
+
 .sidebar {
   background-color: Silver; 
   }
@@ -19,4 +23,5 @@ h1, h2 {
 .sidebar ul li a:hover {
   background-color: Electric;
   }
+
 
