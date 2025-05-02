@@ -9,15 +9,15 @@ h1, h2 {
   }
 
 .sidebar {
-  background-color: Gold; /* calm, safe background */
+  background-color: Silver; 
   }
 
 .sidebar ul li a {
-  color: Gold; /* deep, stable green */
+  color: SteelBlue; /* deep, stable green */
   }
 
 .sidebar ul li a:hover {
-  background-color: Gold;
+  background-color: Electric;
   }
 
 @media screen and (max-width: 25%) {
