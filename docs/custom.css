@@ -8,13 +8,13 @@ h1, h2 {
 }
 
 .sidebar {
-  background-color: #f2f8f4; /* calm, safe background */
+  background-color: Electric; /* calm, safe background */
 }
 
 .sidebar ul li a {
-  color: #0b6e4f; /* deep, stable green */
+  color: Electric; /* deep, stable green */
 }
 
 .sidebar ul li a:hover {
-  background-color: #e0f0ea;
+  background-color: ElectricBlue;
 }
