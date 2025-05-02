@@ -3,19 +3,19 @@ body {
   }
 
 h1, h2 {
-  border-left: 4px solid Electric; /* Safety-green color */
+  border-left: 4px solid Gold; /* Safety-green color */
   padding-left: 10px;
   color: Electric;
   }
 
 .sidebar {
-  background-color: Electric; /* calm, safe background */
+  background-color: Gold; /* calm, safe background */
   }
 
 .sidebar ul li a {
-  color: Electric; /* deep, stable green */
+  color: Gold; /* deep, stable green */
   }
 
 .sidebar ul li a:hover {
-  background-color: ElectricBlue;
+  background-color: Gold;
   }
