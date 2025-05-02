@@ -1,21 +1,21 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: Electric
-}
+  }
 
 h1, h2 {
   border-left: 4px solid Electric; /* Safety-green color */
   padding-left: 10px;
-}
+  color: Electric;
+  }
 
 .sidebar {
   background-color: Electric; /* calm, safe background */
-}
+  }
 
 .sidebar ul li a {
   color: Electric; /* deep, stable green */
-}
+  }
 
 .sidebar ul li a:hover {
   background-color: ElectricBlue;
-}
+  }
