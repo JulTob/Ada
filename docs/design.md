@@ -1,6 +1,7 @@
-# Ada Programming Language
 
-## Overview
+# 👷🏻‍♀️ The Design of Ada
+
+👩🏻‍💻 It should be noted that Ada is not just another programming language.   
 
 👩🏻‍💻 **Ada** is a statically typed, structured programming language designed with an emphasis on software engineering principles—especially the need for component reuse and disciplined development practices. Originally commissioned by the U.S. Department of Defense in the late 1970s, Ada has evolved into a modern language particularly well suited for large-scale, long-lived, real-time, and safety-critical applications.
 
