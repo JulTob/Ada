@@ -1,63 +1,73 @@
-# 👷🏻‍♀️ The Design of Ada
-
-👩🏻‍💻 It should not be thought that Ada is just another programming language.   
-
-👩🏻‍🔧 **Ada is about Software Engineering**, and by analogy, with other branches of engineering, it can be seen that there are two main problems with the development of software: the need to reuse software components as much as possible and the need to establish **disciplined ways of working**.
-
-👾 As an example, Ada can be written in limited resource computers, such as 7 bit-characters systems. This means that a program can be developed (and probably run) in systems with any keyboard without non-ordinary characters (sometimes missing in other languages) such as '{', '[','$'...
-
-😁 But Ada can also adapt to any development style, as all Latin-1 characters, ISO Basic Multilingual (Arabic, Russian, Greek…), Ascii, Unicode... are all supported. You can even use emojis in identifiers!
+Thought for a couple of seconds
 
 
-👩🏻‍✈️ Ada es un lenguaje moderno diseñado para facilitar la escritura de aplicaciones de tiempo real y la programación de sistemas grandes <sup>1.1</sup> (programas de varios millones de líneas).    
-👩🏻‍🔧 Va a permitir expresar de una manera amigable complejos conceptos de programación. Además, Ada tiene muchas características que ayudan a prevenir y detectar rápidamente los errores de programación.   
-> 1.1 Esto se conoce técnicamente como ''Programación a gran escala'' (en inglés "programming in the large") 
+Below is a draft of a purely English–language wiki entry for Ada, organized in a typical encyclopedic style. Feel free to suggest edits, additional sections, or more detail anywhere.
 
-🧚🏻‍♀️ Ada has built-in language support for explicit concurrency, offering tasks, synchronous message passing, protected objects, and non-determinism. 
+---
 
-🧙🏻‍♀️ Ada **incorporates the benefits of object-oriented** languages without incurring the pervasive overheads.
+\= Ada Programming Language =
 
-👮🏻‍♀️ Other notable features of Ada include: **strong typing**, **inherent reliability**, **modularity mechanisms** (packages), run-time checking, **parallel processing**, built in **exception handling**, the ability to provide **abstraction** through the package and **private type**, and **generics**.
+\== Overview ==
+Ada is a statically typed, structured programming language designed with an emphasis on software engineering principles—especially the need for component reuse and disciplined development practices. Originally commissioned by the U.S. Department of Defense in the late 1970s, Ada has evolved into a modern language particularly well suited for large-scale, long-lived, real‐time, and safety-critical applications.
 
-💂🏻‍♀️ Ada is particularly strong in areas such as **real-time applications**, **low-level hardware access**, and **safety-critical** software, as it has specialized design features, and **high reliability**.
+\== Design Principles ==
+\=== Software Engineering Focus ===
+Ada places software engineering at its core. By analogy with other engineering disciplines, Ada addresses two central challenges:
 
-🕵🏻‍♀️ **Most errors are detected at compile-time** and of those remaining many are detected by **runtime** **constraints**. 
+* **Component Reuse**: Facilities such as packages and generics make it straightforward to develop and reuse modular components.
+* **Disciplined Practices**: Strong typing, explicitness, and extensive compile-time checks encourage developers to follow rigorous design and coding standards.
 
-With its **readability, scalability**, and being designed for **development of very large software systems**, Ada is a **good choice for open source development**.
+\=== Readability and Maintainability ===
+Ada favors readability over conciseness. Every keyword is spelled out in full (no abbreviations), and syntactic constructs are designed to be self-documenting. This verbosity requires more effort up front but pays dividends during maintenance, when programs may be read far more often than they are written.
 
-The need for languages that promote reliability and simplify maintenance is well established. Hence emphasis was placed on program readability over ease of writing. 
+\=== Strong, Explicit Typing ===
+Ada’s type system is among the strongest of mainstream languages. Almost every operation on data must be explicitly declared, preventing many common programming errors. While Ada does not support type inference beyond very local contexts, this explicitness enables the compiler to catch mismatches and undefined behavior at compile time.
 
-Being a direct low level language, Ada provides ample support for Real-time multiprocessor systems. Also providing services such as time predictability, inter-task communication (by protected objects), or protected entries.
+\== Key Features ==
+\=== Concurrency ===
+Ada provides built-in language support for concurrent programming:
 
+* **Tasks** for defining independent threads of control
+* **Protected objects** and **entries** for safe shared-data access
+* **Selective synchronization** and **non-deterministic** rendezvous
 
-### Ada is a powerful language designed to address the following issues:
+These features make Ada a natural choice for real-time and multiprocessor systems.
 
-* The development of very large programs by multiple, loosely connected teams.
-  * > The language has features to help manage a large number of program components and to help ensure those components are used consistently.
+\=== Object-Oriented Programming ===
+Ada incorporates object-oriented paradigms—such as tagged types (classes), inheritance, and polymorphism—without sacrificing efficiency. Runtime overheads are minimized, and you only pay for the features you use.
 
-*  The development of long-lived programs that spend most of their time in the maintenance phase of the software life cycle. 
-   * >  The language is designed to promote the readability of programs. You may find Ada code to be rather verbose and tedious to write. However, that extra work pays off later by making the code clearer and easier to read when bugs must be fixed or enhancements are written.
+\=== Exception Handling and Runtime Checking ===
+Robust exception-handling constructs and optional runtime checks (for array bounds, numeric overflows, etc.) help detect and manage errors early, improving overall reliability.
 
-* The development of robust programs where correctness, security, and reliability are priorities. 
-  * >  The language has features designed to make programming safer and less error-prone.
+\=== Generics and Abstraction ===
+Ada’s generic units allow you to write type- and implementation-independent components. Combined with private types and package abstraction, you can enforce strict information hiding and interface contracts.
 
-*  The development of embedded systems where low-level hardware control, multiple concurrent tasks, and real-time requirements are common. 
-   * > The language has features designed to support these things while still retaining as much safety as feasible.
+\=== Low-Level and Real-Time Support ===
 
-* Readability is more important than conciseness. 
-  * > Syntactically this shows through the fact that keywords are preferred to symbols, that no keyword is an abbreviation, etc.
+* Direct access to hardware registers and memory layouts
+* Time-predictable task scheduling
+* Ravensdvos for inter-task communication
+  These capabilities make Ada well suited for embedded and safety-critical systems that have hard real-time constraints.
 
-* Very strong typing. 
-  * > It is very easy to introduce new types in Ada, with the benefit of preventing data usage errors.
-  * > It is similar to many functional languages in that regard, except that the programmer has to be much more explicit about typing in Ada, because there is almost no type inference.
+\== Applications ==
+Ada is most often chosen for:
 
-* Explicit is better than implicit. 
-  * > Although this is a Python commandment, Ada takes it way further than any language we know of:
-      * > > There is mostly no structural typing, and most types need to be explicitly named by the programmer.
-  * > As previously said, there is mostly no type inference.
-  * > Semantics are very well defined, and undefined behavior is limited to an absolute minimum.
-  * > The programmer can generally give a lot of information about what their program means to the compiler (and other programmers). This allows the compiler to be extremely helpful (read: strict) with the programmer.
+* **Large-scale systems** developed by multiple, loosely connected teams
+* **Long-lived software** where maintenance dominates the lifecycle
+* **Safety-critical domains**, such as avionics, rail transport, and medical devices
+* **Embedded real-time systems** requiring precise timing and robust concurrency
 
+\== Comparison with C ==
+Unlike C, Ada enforces a clear distinction between statements (for side effects) and expressions (which return values). For instance, using an expression where a statement is required will cause a compile-time error, reducing logical mistakes (e.g., mixing up “=” and “:=”).
 
+\== See Also ==
 
-One important distinction between Ada and a language like C is that statements and expressions are very clearly distinguished. In Ada, if you try to use an expression where a statement is required then your program will fail to compile. This rule supports a useful stylistic principle: expressions are intended to deliver values, not to have side effects. It can also prevent some programming errors, such as mistakenly using the equality operator "=" instead of the assignment operation ":=" in an assignment statement.
+* High Integrity Ada (HIA)
+* Ravenscar Profile (a subset of Ada for high-integrity real-time systems)
+* SPARK (a formally verifiable Ada-based language)
+
+\== References ==
+
+1. Jean Ichbiah et al., “The Programming Language Ada,” *ACM SIGPLAN Notices*, 1983.
+2. Ada Reference Manual, ISO/IEC 8652:2012.
+3. John Barnes, *High Integrity Software: The SPARK Approach to Safety and Security*, Addison-Wesley, 2003.
