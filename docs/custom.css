@@ -11,7 +11,9 @@ h1, h2 {
 a {
   color: lavender;
   }
-
+a:hover {
+  color: salmon;
+  }
 
 b {
   color: RoyalBlue, ProcessBlue;
