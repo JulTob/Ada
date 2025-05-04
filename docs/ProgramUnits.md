@@ -6,14 +6,16 @@
 
 ## 📚 Libraries
 
-📕 Program units of certain utility.
-📇 They are easily constructed in Ada, allowing simple and effective modularization.
-📑 They structure hierarchically, enabling *decomposition*, *deconstructive*, *top-down*, and *bottom-up* styles of programming.
+- 📕 Program units of certain utility.    
+- 📇 They are easily constructed in Ada, allowing simple and effective modularization.
+- 📑 They structure hierarchically, enabling *decomposition*, *deconstructive*, *top-down*, and *bottom-up* styles of programming.
 
 ## 📦 Package
 
 📦 The basic unit for a collection of logically related entities, such as type declarations and associated operations.
+
 👩🏻‍🔧 Portions of a package can be hidden from the user.
+
 👩🏻‍✈️ A **protected unit** defines operations for the coordinated use of data shared between tasks. Simple mutual exclusion is automatic, while more elaborate sharing protocols can be defined. A protected operation can be:
 
 * A **subprogram**
@@ -29,13 +31,14 @@ A protected unit may define a single protected object or a protected type permit
 2. A **sequence of statements**, which defines the execution of the program unit.
 
 🧘🏻‍♀️ The declarative part associates names with declared entities.
+
 🏌🏻‍♀️ The sequence of statements describes actions to perform; statements execute in succession unless control is transferred elsewhere.
 
-⛹🏻‍♀️ **Assignment** statements change the value of a variable.
-🚴🏻‍♀️ **Procedure calls** invoke subprograms, associating actual parameters with formal parameters.
-🧗🏻‍♀️ **Case** and **if** statements select among statement sequences based on values or conditions.
-🚴🏻‍♀️ The **loop** statement provides iteration until an **exit** statement occurs.
-🏊🏻‍♀️ A **block** statement groups statements with local declarations.
+- ⛹🏻‍♀️ **Assignment** statements change the value of a variable.
+- 🚴🏻‍♀️ **Procedure calls** invoke subprograms, associating actual parameters with formal parameters.
+- 🧗🏻‍♀️ **Case** and **if** statements select among statement sequences based on values or conditions.
+- 🚴🏻‍♀️ The **loop** statement provides iteration until an **exit** statement occurs.
+- 🏊🏻‍♀️ A **block** statement groups statements with local declarations.
 
 🚣🏻‍♀️ **Concurrent statements** include:
 
