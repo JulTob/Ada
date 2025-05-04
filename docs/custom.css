@@ -5,7 +5,7 @@ body {
 h1, h2 {
   border-left: 4px solid Line; 
   padding-left: 10px;
-  color: Electric, Gold;
+  color: Electric, Carmine;
   }
 
 a {
@@ -17,11 +17,11 @@ a {
   }
 
 .sidebar ul li a {
-  color: PaleTurquoise; 
+  color: Magenta; 
   }
 
 .sidebar ul li a:hover {
-  background-color: Gold;
+  background-color: Purple;
   }
 
 
