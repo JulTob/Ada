@@ -9,7 +9,12 @@ h1, h2 {
   }
 
 a {
-  color: Gold;
+  color: lavender;
+  }
+
+
+b {
+  color: RoyalBlue, ProcessBlue;
   }
 
 .sidebar {
