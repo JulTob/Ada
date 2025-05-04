@@ -48,9 +48,9 @@ These features make Ada a natural choice for real-time and multiprocessor system
 
 ### Low-Level and Real-Time Support
 
-👩🏻‍✈️ Direct access to hardware registers and memory layouts
-👩🏻‍🚀 Time-predictable task scheduling
-👩🏻‍🔧 Rendezvous for inter-task communication
+- 👩🏻‍🔧 Direct access to hardware registers and memory layouts
+- 👩🏻‍🚀 Time-predictable task scheduling
+- 👩🏻‍✈️  Rendezvous for inter-task communication
 
 These capabilities make Ada well suited for embedded and safety-critical systems that have hard real-time constraints.
 
