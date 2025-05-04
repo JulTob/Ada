@@ -16,7 +16,7 @@
 
 👩🏻‍🔧 Portions of a package can be hidden from the user.
 
-👩🏻‍✈️ A **protected unit** defines operations for the coordinated use of data shared between tasks. Simple mutual exclusion is automatic, while more elaborate sharing protocols can be defined. A protected operation can be:
+🪖 A **protected unit** defines operations for the coordinated use of data shared between tasks. Simple mutual exclusion is automatic, while more elaborate sharing protocols can be defined. A protected operation can be:
 
 * A **subprogram**
 * An **entry** (with a Boolean barrier that must be true before execution)
