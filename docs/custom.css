@@ -17,11 +17,12 @@ a {
   }
 
 .sidebar ul li a {
-  color: Magenta; 
+  color: Purple; 
   }
 
 .sidebar ul li a:hover {
   background-color: Purple;
+  color: Vermillion; 
   }
 
 
