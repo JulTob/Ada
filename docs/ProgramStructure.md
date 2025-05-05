@@ -62,9 +62,16 @@ procedure Hello is
 ```
 
 <body>
-    <div data-pym-src='https://www.jdoodle.com/embed/v1/421ff9dcf2ef5c58'></div>
+    <div data-pym-src=''></div>
     <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
     </body>
+    
+<iframe
+  width="100%"
+  height="450"
+  src="https://www.jdoodle.com/embed/v1/421ff9dcf2ef5c58"
+  frameborder="0">
+</iframe>
   
 This removes the need to qualify each call with the full package name.
 
