@@ -64,3 +64,9 @@ This removes the need to qualify each call with the full package name.
 ## 🚀 Main Program (?)
 
 The main program is simply the procedure designated as the program’s entry point—in this case, `Hello`. Any top-level procedure can serve as the entry point; the compiler or build tool determines which one is used when creating the executable.
+
+Any top-level procedure can serve as the program’s entry point. Here we used Hello, but your build command or compiler flags determine which procedure is compiled into the executable.
+
+```bash
+gnatmake Hello.adb   # compiles and links Hello.adb into an executable
+```
