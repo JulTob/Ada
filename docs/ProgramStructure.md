@@ -60,6 +60,11 @@ procedure Hello is
     end Hello;
 ```
 
+<body>
+    <div data-pym-src='https://www.jdoodle.com/embed/v1/421ff9dcf2ef5c58'></div>
+    <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
+    </body>
+  
 This removes the need to qualify each call with the full package name.
 
 ## 🚀 Main Program (?)
