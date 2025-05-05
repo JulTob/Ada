@@ -23,7 +23,7 @@
 
 A protected unit may define a single protected object or a protected type permitting multiple similar objects.
 
-## 🏋️‍♀️ Body
+## 🏋🏻‍♀️ Body
 
 🤸🏻‍♀️ The body of a program unit generally contains two parts:
 
