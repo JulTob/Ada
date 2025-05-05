@@ -22,7 +22,16 @@ b {
 .sidebar {
   color: purple;
   background-color: Silver; 
+  transition: opacity 0.5s ease-in-out;
   }
+.sidebar-text {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.sidebar-text.fade-in {
+  opacity: 1;
+}
 
 .sidebar ul li a {
   color: Purple; 
