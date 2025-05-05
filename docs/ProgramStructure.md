@@ -16,6 +16,14 @@ procedure Hello is
     end Hello;
 ```
 
+<iframe
+  src="https://replit.com/github/JulTob/1. HelloWorld/HelloAda.adb?embed=true"
+  width="100%"
+  height="500"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
 It displays the string *"Hello, Ada!"* in the console.
 
 You may have noticed the following:
