@@ -20,16 +20,7 @@ procedure Hello is
   src="https://replit.com/github/JulTob/Ada?embed=true&path=/1.%20HelloWorld/HelloAda.adb"
   style="width:100%; height:450px; border:1px solid #ccc;"
   allowfullscreen
-></iframe>
-
-<iframe
-  src="https://replit.com/github/Jultob/Ada/1. HelloWorld/HelloAda.adb?embed=true"
-  style="width:100%; height:500px; border:0;"
-  >
-  
-</iframe>
-<div data-pym-src="https://www.jdoodle.com/embed/v0/1aGG"></div>
-<script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+  ></iframe>
 
 
 It displays the string *"Hello, Ada!"* in the console.
