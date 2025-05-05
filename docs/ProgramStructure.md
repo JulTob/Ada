@@ -18,8 +18,9 @@ procedure Hello is
 
 <iframe
   src="https://replit.com/github/JulTob/Ada?embed=true&path=/1.%20HelloWorld/HelloAda.adb"
-  style="width:100%; height:450px; border:1px solid #ccc;"
-  allowfullscreen
+  style="width:100%; height:450px; border:1px solid #ccc; "
+  allowfullscreen run = "gnatmake 1.\\ HelloWorld/HelloAda.adb && ./HelloAda"
+  language = "ada"
   ></iframe>
 
 
