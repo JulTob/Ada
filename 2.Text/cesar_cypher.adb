@@ -1,7 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
 
-procedure ROT_ENCRYPTION is
+procedure CESAR_CYPHER is
 
     function ROT_Encrypt(
       Input_Text : in String;
@@ -44,4 +44,4 @@ procedure ROT_ENCRYPTION is
       Put_Line("Encrypted Text: ");
       Put_Line(Encrypted(1 .. Length));
 
-      end ROT_ENCRYPTION;
+      end CESAR_CYPHER;
